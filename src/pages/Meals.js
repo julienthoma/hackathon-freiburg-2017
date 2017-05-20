@@ -11,7 +11,7 @@ const Meals = ({ meals, food }) => {
         axisLabels={{x: 'Food', y: 'kWh / kg'}}
         axes
         height={350}
-        width={600}
+        width={900}
         grid
         colorBars
         data={Object.keys(meals).map(key => {
