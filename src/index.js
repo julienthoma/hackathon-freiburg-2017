@@ -10,6 +10,8 @@ import reducer from './reducers';
 import { enhanceStore, getInitialState } from './store';
 import App from './containers/App';
 import Start from './pages/Start';
+import Meals from './pages/Meals';
+import Ingredients from './pages/Ingredients';
 
 injectTapEventPlugin();
 addLocaleData(de);
@@ -21,6 +23,8 @@ render(
         <Router history={browserHistory}>
           <Route component={App}>
             <Route path="/" component={Start} />
+            <Route path="/meals" component={Meals} />
+            <Route path="/ingredients" component={Ingredients} />
           </Route>
         </Router>
       </MuiThemeProvider>

@@ -86,5 +86,15 @@ export default {
         }
       ]
     },
+  },
+  restaurants: {
+    mcDonalds: {
+      name: 'Mc Donalds',
+      meals: ['cheeseBurger', 'eggsAndBread']
+    },
+    burgerKing: {
+      name: 'Burger King',
+      meals: ['cheeseBurger', 'eggsAndBread']
+    }
   }
 };

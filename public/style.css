@@ -172,3 +172,11 @@
         background-repeat: no-repeat;
         flex-shrink: 0;
     }
+
+    .chart-container {
+        display: flex;
+    }
+
+    .my-chart {
+        margin: 0 20px;
+    }
