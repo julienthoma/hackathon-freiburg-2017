@@ -1,10 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import Header from '../components/Header';
 
 class App extends React.Component {
   render() {
     return (
-      <div>
+      <div className="container">
+      <Header />
           {this.props.children}
       </div>
     );
