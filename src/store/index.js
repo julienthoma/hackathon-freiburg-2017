@@ -1,5 +1,6 @@
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
+import mock from './mockedData';
 
 export const enhanceStore = (reducer, state) => {
   let enhancer = applyMiddleware(thunk);
@@ -13,4 +14,7 @@ export const enhanceStore = (reducer, state) => {
 };
 
 export const getInitialState = () => ({
+  app: {
+    ...mock
+  }
 });
