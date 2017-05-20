@@ -1,54 +1,54 @@
 export default {
   food: {
-    f9: {
+    rice: {
       name: 'Rice',
       productionEnergy: 5,
       nutritionEnergy: 300,
       water: 2500,
     },
-    f1: {
+    bread: {
       name: 'Bread',
       productionEnergy: 0.5,
       nutritionEnergy: 300,
       water: 2000,
     },
-    f2: {
+    milk: {
       name: 'Milk',
       productionEnergy: 1.5,
       nutritionEnergy: 300,
       water: 1000,
     },
-    f3: {
+    apple: {
       name: 'Apples',
       productionEnergy: 3.2,
       nutritionEnergy: 300,
       water: 822,
     },
-    f4: {
+    eggs: {
       name: 'Eggs',
       productionEnergy: 8,
       nutritionEnergy: 300,
       water: 200,
     },
-    f5: {
+    chicken: {
       name: 'Chicken',
       productionEnergy: 9,
       nutritionEnergy: 300,
       water: 4320,
     },
-    f6: {
+    cheese: {
       name: 'Cheese',
       productionEnergy: 13,
       nutritionEnergy: 300,
       water: 3200,
     },
-    f7: {
+    pork: {
       name: 'Pork',
       productionEnergy: 25,
       nutritionEnergy: 300,
       water: 5988,
     },
-    f8: {
+    beef: {
       name: 'Beef',
       productionEnergy: 63,
       nutritionEnergy: 300,
@@ -56,26 +56,35 @@ export default {
     },
   },
   meals: {
-    m1: {
+    cheeseBurger: {
       name: 'Cheese Burger',
-      productionEnergy: 2000,
-      nutritionEnergy: 300,
-      water: 5000,
-      score: 20
+      ingredients: [
+        {
+          id: 'beef',
+          kg: 0.2
+        },
+        {
+          id: 'cheese',
+          kg: 0.03
+        },
+        {
+          id: 'bread',
+          kg: 0.1
+        }
+      ]
     },
-    m2: {
-      name: 'Spaghetti Tomato',
-      productionEnergy: 200,
-      nutritionEnergy: 80,
-      water: 600,
-      score: 30
+    eggsAndBread: {
+      name: 'Eggs and Bread',
+      ingredients: [
+        {
+          id: 'bread',
+          kg: 0.3
+        },
+        {
+          id: 'eggs',
+          kg: 0.15
+        }
+      ]
     },
-    m3: {
-      name: 'Rice with Vegetables',
-      productionEnergy: 300,
-      nutritionEnergy: 300,
-      water: 800,
-      score: 50
-    }
   }
 };
