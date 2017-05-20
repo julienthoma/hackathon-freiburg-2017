@@ -9,9 +9,7 @@ export default () => (
         </div>
         <nav className="header-navigation">
             <ul className="header-navigation__list">
-                <li><a href="#">Home</a>
-                </li>
-                <li><a href="#">Your profile</a>
+                <li><a href="#">Profile</a>
                 </li>
                 <li> <a href="#">Sign-out</a>
                 </li>

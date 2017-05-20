@@ -111,3 +111,64 @@
         background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
         background: -webkit-linear-gradient(top, #4f5964 0%, #5f6975 40%);
     }
+    /************************ Main ************************/
+
+    main {
+        margin: 0 auto;
+        margin-top: 10px;
+        padding: 20px;
+        flex: 1;
+    }
+
+    .main-inner {
+        width: 100%;
+        min-height: 300px;
+        background-color: #efefef;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-inner h1, .main-inner h4 {
+        color: darkgray;
+    }
+
+    .main-inner h4 {
+        margin-top: -5px;
+    }
+
+    .food-list-item {
+        display: flex;
+        align-items: center;
+        flex-basis: 100%;
+        flex-shrink: 0;
+        flex-grow: 1;
+        margin: 5px 20px;
+        box-shadow: 2px 2px 10px #888888;
+    }
+
+    .food-list-info {
+        width: 90vw;
+        padding: 5px 10px;
+        flex-grow: 1;
+    }
+
+    .food-list-info p {
+        flex-direction: column;
+        justify-content: center;
+        height: 38px;
+        line-height: 18px;
+        color: #2b2b2b;
+        margin-bottom: 6px;
+    }
+
+    .food-list-img {
+        height: 150px;
+        flex-basis: 150px;
+        background-image: url('http://www.myw-cms.it/amm/immagini/0002/prodotti/6666_imgscheda_seitan-baconcheese-burger-png.PNG');
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        flex-shrink: 0;
+    }

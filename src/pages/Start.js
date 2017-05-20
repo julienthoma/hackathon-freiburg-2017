@@ -5,10 +5,7 @@ import { BarChart } from 'react-easy-chart';
 const Start = ({ food, meals }) => {
   return (
     <div>
-    <main>
       <div className="main-inner">
-          <h1>Welcome to the Good Food App!</h1>
-          <h4>Let us help you saving energy for your food consumption</h4>
           <div className="food-list">
             <div className="food-list-item">
               <div className="food-list-img"></div>
@@ -18,9 +15,7 @@ const Start = ({ food, meals }) => {
               </div>
             </div>
           </div>
-
       </div>
-    </main>
 
       <h4>Energy needed to produce 1 kg</h4>
       <BarChart
