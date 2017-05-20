@@ -1,5 +1,17 @@
 export default {
   food: {
+    f9: {
+      name: 'Rice',
+      productionEnergy: 5,
+      nutritionEnergy: 300,
+      water: 2500,
+    },
+    f1: {
+      name: 'Bread',
+      productionEnergy: 0.5,
+      nutritionEnergy: 300,
+      water: 2000,
+    },
     f2: {
       name: 'Milk',
       productionEnergy: 1.5,
