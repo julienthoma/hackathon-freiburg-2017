@@ -88,6 +88,7 @@ export default {
   meals: {
     cheeseBurger: {
       name: 'Cheese Burger',
+      imgUrl: 'http://www.myw-cms.it/amm/immagini/0002/prodotti/6666_imgscheda_seitan-baconcheese-burger-png.PNG',
       ingredients: [
         {
           id: 'beef',
@@ -105,6 +106,7 @@ export default {
     },
     fishBurger: {
       name: 'Fish Burger',
+      imgUrl:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAqMLIYz0P4EiZnY3oSurcT2Istre7bR2yjW2sKgPk28-EVzwg5g',
       ingredients: [
         {
           id: 'fish',
@@ -122,6 +124,7 @@ export default {
     },
     riceandvegesoup: {
       name: 'Rice and Vegetable Soup',
+      imgUrl:'https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/chunky-vegetable-brown-rice-soup.jpg?itok=-LzjNUDD',
       ingredients: [
         {
           id: 'rice',
@@ -135,6 +138,7 @@ export default {
     },
     pizzamargerita: {
       name: 'Pizza Margherita',
+        imgUrl:'http://www.roadtvitalia.it/wp-content/uploads/2015/03/Pizza-Patrimonio-dellUmanit%C3%A0.jpg',
       ingredients: [
         {
           id: 'bread',
@@ -152,6 +156,7 @@ export default {
     },
     pizzasalami: {
       name: 'Pizza Salami',
+      imgUrl:'http://www.zustellung-graz.at/wp-content/uploads/2016/05/salami1.jpg',
       ingredients: [
         {
           id: 'bread',
@@ -173,6 +178,7 @@ export default {
     },
     fries: {
       name: 'Fries',
+      imgUrl:'http://cdn.potatopro.com/cdn/farfuture/hU5XuQNKIBXiWjVsMhK1PJKO_MyXmc_YVv8OcPHYJyg/mtime:1470929551/sites/default/files/pictures/french-fries-1200.jpg',
       ingredients: [
         {
           id: 'fries',
@@ -182,6 +188,7 @@ export default {
     },
     burgerandfries: {
       name: 'Burger And Fries',
+      imgUrl:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSdkTE5MMpNkDTU80ffPOJeLW5TX7V6DhrOSEDnGV29MDdLDz7',
       ingredients: [
         {
           id: 'fries',
@@ -199,6 +206,7 @@ export default {
     },
     eggsAndBread: {
       name: 'Eggs and Bread',
+      imgUrl:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN_-4MpEQnMrAc1JjLhJrU4EWKCJGlCDksSdeNXNQ5QahlWHo8',
       ingredients: [
         {
           id: 'bread',

@@ -10,8 +10,6 @@ export default () => (
         </div>
         <nav className="header-navigation">
             <ul className="header-navigation__list">
-                <li><a href="#">Profile</a>
-                </li>
                 <li>
                     <Link to="/">
                         Home
@@ -26,6 +24,8 @@ export default () => (
                     <Link to="/meals">
                         Meals
                     </Link>
+                </li>
+                <li><a href="#">Profile</a>
                 </li>
                 <li> <a href="#">Sign-out</a>
                 </li>
