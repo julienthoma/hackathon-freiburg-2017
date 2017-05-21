@@ -1,317 +1,348 @@
+.container {
+    min-height: 100%;
+    max-width: 100%;
+    margin: 0;
+    background-color: #f7f7f7;
+    font-family: sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
 
-    .container {
-        min-height: 100%;
-        max-width: 100%;
-        margin: 0;
-        background-color: #f7f7f7;
-        font-family: sans-serif;
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-between;
-    }
+a {
+    text-decoration: none;
+}
 
-    a {
-        text-decoration: none;
-    }
+/***********************************************/
+.star-green {
+  background-image: url('http://www.clker.com/cliparts/t/2/A/5/2/O/star-green-favorite-md.png');
+}
 
-    /***********************************************/
-    /************************HEADER************************/
+.star {
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
-    header {
-        height: 155px;
-        /* IE10+ */
-        background-image: -ms-linear-gradient(top left, #002B4B 0%, #F0F0F0 100%);
-        /* Mozilla Firefox */
-        background-image: -moz-linear-gradient(top left, #002B4B 0%, #F0F0F0 100%);
-        /* Opera */
-        background-image: -o-linear-gradient(top left, #002B4B 0%, #F0F0F0 100%);
-        /* Webkit (Safari/Chrome 10) */
-        background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #002B4B), color-stop(100, #F0F0F0));
-        /* Webkit (Chrome 11+) */
-        background-image: -webkit-linear-gradient(top left, #002B4B 0%, #F0F0F0 100%);
-        /* W3C Markup */
-        background-image: linear-gradient(to bottom right, #002B4B 0%, #F0F0F0 100%);
-        background-repeat: repeat-x;
-        width: 100%;
-    }
+.star-transparent {
+  background-image: url('http://images.clipartpanda.com/white-stars-clipart-MiLLdAdgT.png');
+}
 
-    .header-inner {
-        height: 165px;
-        width: 95%;
-        margin: 0 auto;
-    }
+.star-wrapper {
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
 
-    .header-logo {
-        margin-top: 20px;
-        margin-left: 0;
-        width: 200px;
-        float: left;
-        font-size: 48px;
-        color: #f7f7f7;
-        font-family: cursive;
-    }
+/************************HEADER************************/
 
-    .header-logo span {
-        font-size: 58px;
-        color: #7CFC00;
-    }
+header {
+    height: 155px;
+    /* IE10+ */
+    background-image: -ms-linear-gradient(top left, #002B4B 0%, #F0F0F0 100%);
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(top left, #002B4B 0%, #F0F0F0 100%);
+    /* Opera */
+    background-image: -o-linear-gradient(top left, #002B4B 0%, #F0F0F0 100%);
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #002B4B), color-stop(100, #F0F0F0));
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(top left, #002B4B 0%, #F0F0F0 100%);
+    /* W3C Markup */
+    background-image: linear-gradient(to bottom right, #002B4B 0%, #F0F0F0 100%);
+    background-repeat: repeat-x;
+    width: 100%;
+}
 
-    .header-logo sup {
-        margin-left: -118px;
-        top: -19px;
-        position: relative;
-        color: #7cfc00;
-        font-size: 46px;
-    }
+.header-inner {
+    height: 165px;
+    width: 95%;
+    margin: 0 auto;
+}
 
-    .header-navigation {
-        margin-top: -5px;
-    }
+.header-logo {
+    margin-top: 20px;
+    margin-left: 0;
+    width: 200px;
+    float: left;
+    font-size: 48px;
+    color: #f7f7f7;
+    font-family: roboto;
+}
 
-    .header-navigation__list {
-        width: 100%;
-        background: #efefef;
-        background: linear-gradient(top, #f7f7f7 0%, #cccccc 100%);
-        background: -moz-linear-gradient(top, #f7f7f7 0%, #cccccc 100%);
-        background: -webkit-linear-gradient(top, #f7f7f7 0%, #cccccc 100%);
-        box-shadow: 0 0 9px rgba(0, 0, 0, 0.15);
-        padding: 0;
-        border-radius: 2px;
-        list-style: none;
-        display: flex;
-        justify-content: flex-end;
-    }
+.header-logo span {
+    font-size: 58px;
+    color: #7CFC00;
+}
 
-    .header-navigation__list:after {
-        content: "";
-        clear: both;
-        display: block;
-    }
+.header-logo sup {
+    margin-left: -77px;
+    top: -14px;
+    position: relative;
+    color: #7cfc00;
+    font-size: 46px;
+}
 
-    .header-navigation__list li {
-        float: left;
-    }
+.header-navigation {
+    margin-top: -5px;
+}
 
-    .header-navigation__list li:active,
-    .header-navigation__list li:focus {
-        background: #4b545f;
-        background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
-        background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
-        background: -webkit-linear-gradient(top, #4f5964 0%, #5f6975 40%);
-    }
+.header-navigation__list {
+    width: 100%;
+    background: #efefef;
+    background: linear-gradient(top, #f7f7f7 0%, #cccccc 100%);
+    background: -moz-linear-gradient(top, #f7f7f7 0%, #cccccc 100%);
+    background: -webkit-linear-gradient(top, #f7f7f7 0%, #cccccc 100%);
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.15);
+    padding: 0;
+    border-radius: 2px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
 
-    .header-navigation__list li:last-child {
-        margin-right: 80px;
-    }
+.header-navigation__list:after {
+    content: "";
+    clear: both;
+    display: block;
+}
 
-    .header-navigation__list li a {
-        display: block;
-        padding: 10px 15px;
-        color: #757575;
-        text-decoration: none;
-    }
+.header-navigation__list li {
+    float: left;
+}
 
-    .header-navigation__list li a:hover {
-        color: #fff;
-    }
+.header-navigation__list li a:active, .header-navigation__list li a:focus {
+    background: #adb1b7;
+    background: linear-gradient(top, #adb1b7 0%, #adb1b7 40%);
+    background: -moz-linear-gradient(top, #adb1b7 0%, #adb1b7 40%);
+    background: -webkit-linear-gradient(top, #adb1b7 0%, #adb1b7 40%);
+    color: #fff;
+}
 
-    .header-navigation__list li:hover {
-        background: #4b545f;
-        background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
-        background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
-        background: -webkit-linear-gradient(top, #4f5964 0%, #5f6975 40%);
-    }
-    /************************ Main ************************/
+.header-navigation__list li:last-child {
+    margin-right: 80px;
+}
 
-    main {
-        margin: 0 auto;
-        margin-top: 10px;
-        padding: 20px;
-        flex: 1;
-    }
+.header-navigation__list li a {
+    display: block;
+    padding: 10px 15px;
+    color: #757575;
+    text-decoration: none;
+}
 
-    .main-inner {
-        width: 100%;
-        min-height: 300px;
-        background-color: #efefef;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+.header-navigation__list li a:hover {
+    color: #fff;
+}
 
-    .main-inner h1, .main-inner h4 {
-        color: darkgray;
-    }
+.header-navigation__list li:hover {
+    background: #4b545f;
+    background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+    background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+    background: -webkit-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+}
 
-    .main-inner h4 {
-        margin-top: -5px;
-    }
 
-    .food-list {
-      display: flex;
-      width: 100%;
-    }
+/************************ Main ************************/
 
-    .food-list-item {
-        display: flex;
-        align-items: center;
+main {
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 20px;
+    flex: 1;
+}
 
-        flex-shrink: 0;
-        flex-grow: 1;
-        margin: 5px 20px;
-        box-shadow: 2px 2px 10px #888888;
-    }
+.main-inner {
+    width: 100%;
+    min-height: 300px;
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-    .food-list-info {
-        padding: 5px 10px;
-        flex-grow: 1;
-    }
+.main-inner h1, .main-inner h4 {
+    color: darkgray;
+}
 
-    .food-list-info p {
-        flex-direction: column;
-        justify-content: center;
-        height: 38px;
-        line-height: 18px;
-        color: #2b2b2b;
-        margin-bottom: 6px;
-    }
+.main-inner h4 {
+    margin-top: -5px;
+}
 
-    .food-list-img {
-        height: 150px;
-        flex-basis: 150px;
-        background-image: url('http://www.myw-cms.it/amm/immagini/0002/prodotti/6666_imgscheda_seitan-baconcheese-burger-png.PNG');
-        background-position: center center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        flex-shrink: 0;
-    }
+.food-list {
+    display: flex;
+    width: 100%;
+}
 
-    .chart-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+.food-list-item {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    flex-grow: 1;
+    margin: 5px 20px;
+    box-shadow: 2px 2px 10px #888888;
+}
 
-    .my-chart {
-        margin: 0 20px;
-    }
+.food-list-info {
+    padding: 5px 10px;
+    flex-grow: 1;
+}
+
+.food-list-info p {
+    flex-direction: column;
+    justify-content: center;
+    height: 38px;
+    line-height: 18px;
+    color: #2b2b2b;
+    margin-bottom: 6px;
+}
+
+.food-list-img {
+    height: 150px;
+    flex-basis: 150px;
+    /*background-image: url('http://www.myw-cms.it/amm/immagini/0002/prodotti/6666_imgscheda_seitan-baconcheese-burger-png.PNG');*/
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+}
+
+.chart-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.my-chart {
+    margin: 0 20px;
+}
+
 
 /********************* page meal ***********************************/
+
 .page-meal, .page-ingredients {
-  width: 100%;
+    width: 100%;
 }
 
 .meal-item h2 {
-  padding-left: 20px;
+    padding-left: 20px;
 }
 
 .page-meal {
-  margin: 50px 0;
+    margin: 50px 0;
 }
 
 .page-meal h1 {
-  padding-left: 20px;
+    padding-left: 20px;
 }
 
-
 .page-ingredients {
-  margin: 50px 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .page-ingredients h4 {
-  align-self: center;
+    align-self: center;
 }
 
+
 /************************ Restaurant panel ********************/
+
 .home-content-wrapper {
-  margin: 50px auto;
-  text-align: center;
+    margin: 50px auto;
+    text-align: center;
 }
 
 .home-content-wrapper h1 {
-  max-width: 700px;
-  margin: 50px auto;
-  color: #636060;
-  font-family: serif;
+    max-width: 700px;
+    margin: 50px auto;
+    color: #636060;
+    font-family: serif;
+    font-size: 36px;
 }
 
 .home-content-wrapper h1 span {
-  color: #7cfc00;
+    color: #7cfc00;
 }
 
 .restaurant-panels-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  justify-content: space-around;
-  flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    flex-grow: 1;
 }
 
 .restaurant-panel {
-  box-shadow: 2px 2px 10px #888888;
-  margin: 20px 10px;
+    box-shadow: 2px 2px 10px #888888;
+    margin: 20px 10px;
 }
 
 .restaurant-panel-img {
-  height: 200px;
-  width: 200px;
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .retaurant-img01 {
-    background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/McDonald%27s_SVG_logo.svg/2000px-McDonald%27s_SVG_logo.svg.png');
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/McDonald%27s_SVG_logo.svg/2000px-McDonald%27s_SVG_logo.svg.png');
 }
 
 .retaurant-img04 {
-    background-image:url('http://is4.mzstatic.com/image/thumb/Purple/v4/c5/ac/95/c5ac95af-f8c3-e858-482f-09d12ef65486/source/175x175bb.jpg');
+    background-image: url('http://is4.mzstatic.com/image/thumb/Purple/v4/c5/ac/95/c5ac95af-f8c3-e858-482f-09d12ef65486/source/175x175bb.jpg');
 }
 
 .retaurant-img03 {
-    background-image:url('http://events.accessatlanta.com/image?method=image.icrop&context=event.yield&id=69060&w=350&h=-1');
+    background-image: url('http://events.accessatlanta.com/image?method=image.icrop&context=event.yield&id=69060&w=350&h=-1');
 }
 
 .retaurant-img05 {
-    background-image:url('http://ais.fudder.de/piece/07/0b/b5/c3/118207939-w-960.jpg');
+    background-image: url('http://ais.fudder.de/piece/07/0b/b5/c3/118207939-w-960.jpg');
 }
 
 .retaurant-img02 {
-    background-image:url('http://www.wiehre-online.de/assets/images/kunden/logos/gastronomie/kartoffelhaus_logo.jpg');
+    background-image: url('http://www.wiehre-online.de/assets/images/kunden/logos/gastronomie/kartoffelhaus_logo.jpg');
 }
 
 .restaurant-panel-info {
-  word-wrap: break-word;
-  font-size: 14px;
-  width: 170px;
-  padding: 10px 15px;
+    word-wrap: break-word;
+    font-size: 14px;
+    width: 170px;
+    padding: 10px 15px;
 }
 
+
 /**************** ingredient-item **************************/
+
 .ingredient-item {
-  box-shadow: 2px 2px 10px #888888;
-  padding: 10px 20px;
-  margin: 20px;
-  background-color: #efefef;
-  color: #fff;
+    box-shadow: 2px 2px 10px #888888;
+    padding: 10px 20px;
+    margin: 20px;
+    background-color: #efefef;
+    color: #fff;
 }
 
 .ingredient-item h4 {
-  color: #4a4141;
-  padding-bottom: 5px;
-  border-bottom: 1px solid gray;
+    color: #4a4141;
+    padding-bottom: 5px;
+    border-bottom: 1px solid gray;
 }
 
 .ingredient-item div {
-  color: #5d3030;
-  font-size: 16px;
+    color: #5d3030;
+    font-size: 16px;
 }
 
+
 /************************FOOTER************************/
+
 footer {
     font-size: 13px;
     background-color: #002b4b;

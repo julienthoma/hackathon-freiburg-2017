@@ -25,12 +25,13 @@ const Meals = ({ meals, food }) => {
       />
       {
         Object.keys(meals).map(key => {
-          const { name, ingredients } = meals[key];
+          const { name, ingredients, imgUrl } = meals[key];
           return (
             <Meal
               name={name}
               ingredients={ingredients}
               food={food}
+              imgUrl={imgUrl}
             />
           )
         })

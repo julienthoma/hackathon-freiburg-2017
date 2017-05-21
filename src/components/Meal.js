@@ -2,7 +2,7 @@ import React from 'react';
 import Ingredient from '../components/Ingredient';
 import MyBarChart from '../components/MyBarChart';
 
-export default ({ name, ingredients, food }) => {
+export default ({ name, ingredients, food, imgUrl }) => {
   const {productionEnergySum, nutritionEnergySum, waterSum} = ingredients.reduce(({productionEnergySum, nutritionEnergySum, waterSum}, { id, kg}) => {
     const { productionEnergy, nutritionEnergy, water } = food[id];
 
@@ -15,6 +15,20 @@ export default ({ name, ingredients, food }) => {
 
   return (
     <div className="meal-item">
+
+      <div className="main-inner">
+          <div className="food-list">
+            <div className="food-list-item">
+              <div className="food-list-img" style={{backgroundImage:`url(${imgUrl})`}}></div>
+              <div className="food-list-info">
+                <p>Energy Consumption: {productionEnergySum.toFixed(2)} kWh</p>
+                <p>Calories: {nutritionEnergySum.toFixed(2)} cal</p>
+                <p>Water: {waterSum.toFixed(2)} liters</p>
+              </div>
+            </div>
+          </div>
+      </div>
+
       <h2>{name}</h2>
       <div className="chart-container">
         <MyBarChart
@@ -61,19 +75,6 @@ export default ({ name, ingredients, food }) => {
               };
             })}
         />
-      </div>
-
-      <div className="main-inner">
-          <div className="food-list">
-            <div className="food-list-item">
-              <div className="food-list-img"></div>
-              <div className="food-list-info">
-                <p>Energy Consumption: {productionEnergySum.toFixed(2)} kWh</p>
-                <p>Calories: {nutritionEnergySum.toFixed(2)} cal</p>
-                <p>Water: {waterSum.toFixed(2)} liters</p>
-              </div>
-            </div>
-          </div>
       </div>
 
     </div>

@@ -6,16 +6,31 @@ import { BarChart } from 'react-easy-chart';
 const Ingredients = ({ food }) => {
   return (
     <div className="page-ingredients">
+
+  
+    {
+      Object.keys(food).map(key => {
+        const { name, productionEnergy, nutritionEnergy, water } = food[key];
+        return (
+          <Ingredient
+            name={name}
+            productionEnergy={productionEnergy}
+            nutritionEnergy={nutritionEnergy}
+            water={water}
+            kg={1}
+          />
+        )
+      })
+    }
+
+
       <h4>Energy needed to produce 1 kg</h4>
       <BarChart
         axisLabels={{x: 'Food', y: 'kWh / kg'}}
         axes
         height={350}
-<<<<<<< HEAD
         width={300}
-=======
         width={900}
->>>>>>> 61bac1cbcd926110f8bd807ae07fe973cd3d7104
         grid
         colorBars
         data={Object.keys(food).map(key => {
@@ -31,11 +46,7 @@ const Ingredients = ({ food }) => {
         axisLabels={{x: 'Food', y: 'liters / kg'}}
         axes
         height={350}
-<<<<<<< HEAD
-        width={300}
-=======
         width={900}
->>>>>>> 61bac1cbcd926110f8bd807ae07fe973cd3d7104
         grid
         colorBars
         data={Object.keys(food).map(key => {
@@ -45,20 +56,7 @@ const Ingredients = ({ food }) => {
           }
         })}
       />
-      {
-        Object.keys(food).map(key => {
-          const { name, productionEnergy, nutritionEnergy, water } = food[key];
-          return (
-            <Ingredient
-              name={name}
-              productionEnergy={productionEnergy}
-              nutritionEnergy={nutritionEnergy}
-              water={water}
-              kg={1}
-            />
-          )
-        })
-      }
+
     </div>
   );
 };

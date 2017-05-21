@@ -11,26 +11,61 @@ const Start = ({ food, meals, restaurants }) => {
         <div className="restaurant-panel">
           <div className="restaurant-panel-img retaurant-img01"></div>
           <div className="restaurant-panel-info">Today <b>10%</b> disscount</div>
+          <div className="star-wrapper">
+            <div className="star-green star"></div>
+            <div className="star-green star"></div>
+            <div className="star-green star"></div>
+            <div className="star-transparent star"></div>
+            <div className="star-transparent star"></div>
+          </div>
         </div>
 
         <div className="restaurant-panel">
           <div className="restaurant-panel-img retaurant-img02"></div>
-          <div className="restaurant-panel-info">Today <b>Tomato Soup</b></div>
+          <div className="restaurant-panel-info">Today <b>info</b></div>
+          <div className="star-wrapper">
+            <div className="star-green star"></div>
+            <div className="star-green star"></div>
+            <div className="star-transparent star"></div>
+            <div className="star-transparent star"></div>
+            <div className="star-transparent star"></div>
+          </div>
         </div>
 
         <div className="restaurant-panel">
           <div className="restaurant-panel-img retaurant-img03"></div>
-          <div className="restaurant-panel-info">Today <b>closed</b></div>
+          <div className="restaurant-panel-info">Today <b>info</b></div>
+          <div className="star-wrapper">
+            <div className="star-green star"></div>
+            <div className="star-transparent star"></div>
+            <div className="star-transparent star"></div>
+            <div className="star-transparent star"></div>
+            <div className="star-transparent star"></div>
+          </div>
         </div>
 
         <div className="restaurant-panel">
           <div className="restaurant-panel-img retaurant-img04"></div>
           <div className="restaurant-panel-info">Today <b>free dessert</b></div>
+          <div className="star-wrapper">
+            <div className="star-green star"></div>
+            <div className="star-green star"></div>
+            <div className="star-green star"></div>
+            <div className="star-transparent star"></div>
+            <div className="star-transparent star"></div>
+          </div>
         </div>
 
         <div className="restaurant-panel">
           <div className="restaurant-panel-img retaurant-img05"></div>
-          <div className="restaurant-panel-info">Today <b>open</b></div>
+          <div className="restaurant-panel-info">Today <b>info</b></div>
+          <div className="star-wrapper">
+            <div className="star-green star"></div>
+            <div className="star-green star"></div>
+            <div className="star-transparent star"></div>
+            <div className="star-transparent star"></div>
+            <div className="star-transparent star"></div>
+          </div>
         </div>
       </div>
 </div>
