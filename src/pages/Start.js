@@ -5,7 +5,7 @@ const Start = ({ food, meals, restaurants }) => {
   return (
 
     <div className="home-content-wrapper">
-      <h1>By saving <span>energy</span> for your food consumption, make the world a better place</h1>
+      <h1>Save food, save <span>energy</span>, save lives!</h1>
       <div className="restaurant-panels-container">
 
         <div className="restaurant-panel">
