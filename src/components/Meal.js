@@ -20,7 +20,7 @@ export default ({ name, ingredients, food }) => {
         <MyBarChart
           xLabel="Meals"
           yLabel="Energy Consumption kWh"
-          height={200}
+          height={300}
           width={300}
           data={
             ingredients.map(({ id, kg }) => {
@@ -35,7 +35,7 @@ export default ({ name, ingredients, food }) => {
         <MyBarChart
           xLabel="Meals"
           yLabel="Water Consumption"
-          height={200}
+          height={300}
           width={300}
           data={
             ingredients.map(({ id, kg }) => {
@@ -50,7 +50,7 @@ export default ({ name, ingredients, food }) => {
         <MyBarChart
           xLabel="Meals"
           yLabel="Calories"
-          height={200}
+          height={300}
           width={300}
           data={
             ingredients.map(({ id, kg }) => {
@@ -63,11 +63,19 @@ export default ({ name, ingredients, food }) => {
         />
       </div>
 
-      <p>Energy Consumption: {productionEnergySum.toFixed(2)} kWh</p>
-      <p>Calories: {nutritionEnergySum.toFixed(2)} cal</p>
-      <p>Water: {waterSum.toFixed(2)} liters</p>
+      <div className="main-inner">
+          <div className="food-list">
+            <div className="food-list-item">
+              <div className="food-list-img"></div>
+              <div className="food-list-info">
+                <p>Energy Consumption: {productionEnergySum.toFixed(2)} kWh</p>
+                <p>Calories: {nutritionEnergySum.toFixed(2)} cal</p>
+                <p>Water: {waterSum.toFixed(2)} liters</p>
+              </div>
+            </div>
+          </div>
+      </div>
 
     </div>
   )
 }
-

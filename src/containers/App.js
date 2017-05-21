@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 class App extends React.Component {
   render() {
@@ -8,6 +9,7 @@ class App extends React.Component {
       <div className="container">
       <Header />
           {this.props.children}
+      <Footer />
       </div>
     );
   }

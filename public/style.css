@@ -1,4 +1,3 @@
-    body {}
 
     .container {
         min-height: 100%;
@@ -7,12 +6,14 @@
         background-color: #f7f7f7;
         font-family: sans-serif;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-between;
     }
 
     a {
         text-decoration: none;
     }
+
     /***********************************************/
     /************************HEADER************************/
 
@@ -42,11 +43,12 @@
 
     .header-logo {
         margin-top: 20px;
-        margin-left: -8px;
+        margin-left: 0;
         width: 200px;
         float: left;
         font-size: 48px;
         color: #f7f7f7;
+        font-family: cursive;
     }
 
     .header-logo span {
@@ -54,16 +56,16 @@
         color: #7CFC00;
     }
 
-    .heade-logo sup {
-        color: rgba(255, 255, 255, 0.4);
-        font-size: 48px;
+    .header-logo sup {
+        margin-left: -118px;
+        top: -19px;
         position: relative;
-        top: -12px;
-        right: 120px;
+        color: #7cfc00;
+        font-size: 46px;
     }
 
     .header-navigation {
-        margin-top: 5px;
+        margin-top: -5px;
     }
 
     .header-navigation__list {
@@ -88,6 +90,14 @@
 
     .header-navigation__list li {
         float: left;
+    }
+
+    .header-navigation__list li:active,
+    .header-navigation__list li:focus {
+        background: #4b545f;
+        background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+        background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+        background: -webkit-linear-gradient(top, #4f5964 0%, #5f6975 40%);
     }
 
     .header-navigation__list li:last-child {
@@ -138,10 +148,15 @@
         margin-top: -5px;
     }
 
+    .food-list {
+      display: flex;
+      width: 100%;
+    }
+
     .food-list-item {
         display: flex;
         align-items: center;
-        flex-basis: 100%;
+
         flex-shrink: 0;
         flex-grow: 1;
         margin: 5px 20px;
@@ -149,7 +164,6 @@
     }
 
     .food-list-info {
-        width: 90vw;
         padding: 5px 10px;
         flex-grow: 1;
     }
@@ -175,8 +189,146 @@
 
     .chart-container {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .my-chart {
         margin: 0 20px;
     }
+
+/********************* page meal ***********************************/
+.page-meal, .page-ingredients {
+  width: 100%;
+}
+
+.meal-item h2 {
+  padding-left: 20px;
+}
+
+.page-meal {
+  margin: 50px 0;
+}
+
+.page-meal h1 {
+  padding-left: 20px;
+}
+
+
+.page-ingredients {
+  margin: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.page-ingredients h4 {
+  align-self: center;
+}
+
+/************************ Restaurant panel ********************/
+.home-content-wrapper {
+  margin: 50px auto;
+  text-align: center;
+}
+
+.home-content-wrapper h1 {
+  max-width: 700px;
+  margin: 50px auto;
+  color: #636060;
+  font-family: serif;
+}
+
+.home-content-wrapper h1 span {
+  color: #7cfc00;
+}
+
+.restaurant-panels-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+.restaurant-panel {
+  box-shadow: 2px 2px 10px #888888;
+  margin: 20px 10px;
+}
+
+.restaurant-panel-img {
+  height: 200px;
+  width: 200px;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.retaurant-img01 {
+    background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/McDonald%27s_SVG_logo.svg/2000px-McDonald%27s_SVG_logo.svg.png');
+}
+
+.retaurant-img04 {
+    background-image:url('http://is4.mzstatic.com/image/thumb/Purple/v4/c5/ac/95/c5ac95af-f8c3-e858-482f-09d12ef65486/source/175x175bb.jpg');
+}
+
+.retaurant-img03 {
+    background-image:url('http://events.accessatlanta.com/image?method=image.icrop&context=event.yield&id=69060&w=350&h=-1');
+}
+
+.retaurant-img05 {
+    background-image:url('http://ais.fudder.de/piece/07/0b/b5/c3/118207939-w-960.jpg');
+}
+
+.retaurant-img02 {
+    background-image:url('http://www.wiehre-online.de/assets/images/kunden/logos/gastronomie/kartoffelhaus_logo.jpg');
+}
+
+.restaurant-panel-info {
+  word-wrap: break-word;
+  font-size: 14px;
+  width: 170px;
+  padding: 10px 15px;
+}
+
+/**************** ingredient-item **************************/
+.ingredient-item {
+  box-shadow: 2px 2px 10px #888888;
+  padding: 10px 20px;
+  margin: 20px;
+  background-color: #efefef;
+  color: #fff;
+}
+
+.ingredient-item h4 {
+  color: #4a4141;
+  padding-bottom: 5px;
+  border-bottom: 1px solid gray;
+}
+
+.ingredient-item div {
+  color: #5d3030;
+  font-size: 16px;
+}
+
+/************************FOOTER************************/
+footer {
+    font-size: 13px;
+    background-color: #002b4b;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+}
+
+footer a {
+    display: block;
+    color: white;
+}
+
+.footer-social-bar {
+    display: flex;
+    padding-top: 20px;
+    margin-left: 10%;
+}

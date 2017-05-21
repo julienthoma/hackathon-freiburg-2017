@@ -11,7 +11,11 @@ const Ingredients = ({ food }) => {
         axisLabels={{x: 'Food', y: 'kWh / kg'}}
         axes
         height={350}
-        width={600}
+<<<<<<< HEAD
+        width={300}
+=======
+        width={900}
+>>>>>>> 61bac1cbcd926110f8bd807ae07fe973cd3d7104
         grid
         colorBars
         data={Object.keys(food).map(key => {
@@ -27,7 +31,11 @@ const Ingredients = ({ food }) => {
         axisLabels={{x: 'Food', y: 'liters / kg'}}
         axes
         height={350}
-        width={600}
+<<<<<<< HEAD
+        width={300}
+=======
+        width={900}
+>>>>>>> 61bac1cbcd926110f8bd807ae07fe973cd3d7104
         grid
         colorBars
         data={Object.keys(food).map(key => {

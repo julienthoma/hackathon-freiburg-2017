@@ -16,8 +16,8 @@ const MyBarChart = ({ xLabel, yLabel, data, height, width}) => (
 );
 
 MyBarChart.defaultProps = {
-  height: 350,
-  width: 600
+  height: 450,
+  width: 300
 };
 
 export default MyBarChart;
